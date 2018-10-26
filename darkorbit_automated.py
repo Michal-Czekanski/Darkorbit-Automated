@@ -50,12 +50,12 @@ def sleep_count(sleep_time, save_time = False):
         # if this function is used to measure time between resources transporting
         if save_time == True:
                 if i in range(60, 21600, 60):
-                    file = open(r'C:\Users\Hp Laptop\Desktop\Programowanie\moje\darkorbitBot_time.txt')
+                    file = open(r'.\darkorbitBot_time.txt')
                     last_launch, time_left = file.read().split('\n')
                     file.close()
 
                     updated_time = float(time_left) - 60
-                    file = open(r'C:\Users\Hp Laptop\Desktop\Programowanie\moje\darkorbitBot_time.txt', 'w')
+                    file = open(r'.\darkorbitBot_time.txt', 'w')
                     file.write(last_launch + '\n' + str(updated_time))
                     file.close()
                         
@@ -203,7 +203,7 @@ def promerium_send(amount, driver):
    
 def bot():
 
-    tm_left = d_timer(r'C:\Users\Hp Laptop\Desktop\Programowanie\moje\darkorbitBot_time.txt')
+    tm_left = d_timer(r'.\darkorbitBot_time.txt')
     
     if tm_left > 0:
         sleep_count(tm_left, save_time = True)
