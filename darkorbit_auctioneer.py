@@ -1,4 +1,4 @@
-# darkorbitBot.py
+# darkorbit_auctioneer.py - performs auction automatically
 password = '#my_password'
 
 #//////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
