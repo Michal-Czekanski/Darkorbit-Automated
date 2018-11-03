@@ -1,4 +1,4 @@
-# darkorbit_automated.py
+# darkorbit_automated.py - this program automatically receives resources, sells them and sends again on my ship
 password = '#my_password'
 
 
